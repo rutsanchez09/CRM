@@ -4,15 +4,15 @@ import java.util.List;
 public class Cliente extends EntidadBase {
     private String nombreEmpresa;
     private String telefono;
-    private String email;
+    private String correo;
     private String fechaRegistro;
     private List<Oportunidad> oportunidades;
 
-    public Cliente(String id, String nombre, String telefono, String email, String fecha) {
+    public Cliente(String id, String nombre, String telefono, String correo, String fecha) {
         super(id);
         this.nombreEmpresa = nombre;
         setTelefono(telefono); // Validación inmediata
-        this.email = email;
+        this.correo = correo;
         this.fechaRegistro = fecha;
         this.oportunidades = new ArrayList<>();
     }
